@@ -6,8 +6,8 @@
 Goals:
 
 Start an understanding of reasearch conducted locally in Southern California 
-Replicate findings including key findings or algorithms 
-Improve own techincal skill 
+
+Replication of key findings/algorithms/etc to improve techincal skill 
 
 
 
