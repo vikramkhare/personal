@@ -5,7 +5,7 @@
 
 Goals:
 
-Start an understanding of reasearch conducted locally in Southern California 
+Start a review of reasearch conducted locally. 
 
 Replication of key findings/algorithms/etc to improve techincal skill 
 
@@ -16,7 +16,8 @@ Replication of key findings/algorithms/etc to improve techincal skill
 
 ## Outline
 
-- https://www.math.uci.edu/research
+
+- UCI  https://www.math.uci.edu/research
 - https://www.math.uci.edu/research/applied-and-computational-mathematics 
   
   
