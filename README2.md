@@ -19,12 +19,12 @@ div 92 10 is equivlent to 92 'div' 10
 
 
 First functions
-
+````
 doubleMe x = x + x  
-
-
+````
+````
 doubleUs x y = doubleMe x + doubleMe y   
-
+````
 
 ````
 doubleSmallNumber x = if x > 100  
