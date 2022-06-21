@@ -1,14 +1,22 @@
+
+
+
+
+# Introduction 
+
+Free online textbook: 
 http://learnyouahaskell.com/chapters
 
 
 
-#Introduction 
-##General Notes and Syntax 
-Haskell is: Lazy evaluating,  and statcially typed 
+## General Notes and Syntax 
+Haskell is: 
+  - Lazy evaluating 
+  - statcially typed i.e. every expression is typed in order to compile. There is type inference
+    In gchi, use :t varname to lookup type. '::' translates as 'type of' e.g. 'a' :: Char  
+    
+    
 
-True, False
-
-|| , && , \= , ==
 
 "let" keyword 
 
@@ -18,8 +26,7 @@ ghci> [0.1, 0.3 .. 1]
 [0.1,0.3,0.5,0.7,0.8999999999999999,1.0999999999999999]  
 ````
 
-
-###  functions 
+###  Functions 
 "infix" functions * , to write expressions like x * 3
 "prefix" functions  like succ (short for successor) to write expressions like succ 8
 ````
@@ -27,6 +34,37 @@ div 92 10 -- is equivlent to
 92 'div' 10  
 `````
 
+Functions should declare a type, unless they are very short 
+````
+removeNonUppercase :: [Char] -> [Char]  
+removeNonUppercase st = [ c | c <- st, c `elem` ['A'..'Z']]   
+````
+This function practically reads in english. removeNonUppercase is a function taking a list of characters, and returning a list of characters, that works by for every character c in list st, c must be an element in the range of capital letters. 
+
+### Data Types
+- Common ones: Integer or Int,  Float is single percision, Double, Bool, Char 
+- Type Variables : Observe how a function returns a type variable, not unlike a generic. These kind of functions are "polymorphic"--will work on many types 
+- 
+````
+ghci> :t head  
+head :: [a] -> a  
+
+ghci> :t fst  
+fst :: (a, b) -> a  -- will return variable of same type as first elm of the tuple 
+`````
+
+
+- Typeclasses , or Class Constraint => 
+````
+ghci> :t (==)  
+(==) :: (Eq a) => a -> a -> Bool  
+````
+Can read as: the equality function takes any two values that are of the same type and returns a Bool
+In particular, the type of those two values must be a member of the Eq class
+
+Other type classes include:
+  Ord, for types with an ordering
+  Show can be preseted as strings 
 
 
 ### First functions
