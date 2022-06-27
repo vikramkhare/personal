@@ -183,8 +183,6 @@ ghci> [ x | x <- [10..20], x /= 13, x /= 15, x /= 19]
 [10,11,12,14,16,17,18,20]  
 ````
 
-
-Advanced
 ````
 length' xs = sum [1 | _ <- xs]  
 ````
@@ -193,9 +191,25 @@ Calls sum on the list, with each element replaced by 1.
 
 
 
+Pattern Matching in functions 
+Due to haskell flow control, resolve to recursively determined factorial. 
+If we don't catch the case though: "*** Exception: tut.hs:(53,0)-(55,21): Non-exhaustive patterns in function charName  
+
+````
+factorial :: (Integral a) => a -> a  
+factorial 0 = 1  
+factorial n = n * factorial (n - 1)  
+````
 
 
-TODO : Advanced 
+Power of Pattern Matching: Compare these function.
+````
+addVectors :: (Num a) => (a, a) -> (a, a) -> (a, a)  
+addVectors a b = (fst a + fst b, snd a + snd b)  
+
+addVectors :: (Num a) => (a, a) -> (a, a) -> (a, a)  
+addVectors (x1, y1) (x2, y2) = (x1 + x2, y1 + y2)  
+````
 
 
 
