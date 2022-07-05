@@ -16,9 +16,11 @@ Haskell is:
     In gchi, use :t varname to lookup type. '::' translates as 'type of' e.g. 'a' :: Char  
     
     
+Haskell implements Lambda Calculus, "a formal system in mathematical logic for expressing computation based on function abstraction and application using variable binding and subsstitution. 
 
+It is a univeral model of computation that can be used to simulate any Turing machine." Source: https://en.wikipedia.org/wiki/Lambda_calculus 
 
-"let" keyword 
+"let" keyword  for variable decleration 
 
 Beware underlying floating points, eg 
 ````
