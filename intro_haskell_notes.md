@@ -2,17 +2,23 @@
 
 
 
-# Introduction 
-
+This 
 Free online textbook: 
 http://learnyouahaskell.com/chapters
+
+2minute video: 
+https://www.youtube.com/watch?v=Qa8IfEeBJqk 
+
+
+
 
 
 
 ## General Notes and Syntax 
 Haskell is: 
   - Lazy evaluating 
-  - statcially typed i.e. every expression is typed in order to compile. There is type inference
+  - statcially typed i.e. every expression is typed in order to compile. May result in less CPU performance at runtime, and more required memory . 
+  - There is type inference
     In gchi, use :t varname to lookup type. '::' translates as 'type of' e.g. 'a' :: Char  
     
     
